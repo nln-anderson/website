@@ -1,62 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <title>Nolan's Math Tutoring</title>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nolan's Math Tutoring</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
 <body>
+
     <header>
-        <h1>Nolan Anderson's Math Tutoring</h1>
+        <h2 class="logo"><a href="homepage.html">Nolan's Math Tutoring</a></h2>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/about.html">About Me</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="book" href="https://calendly.com/nolan-tutoring" target="_blank"><button>Book Now</button></a>
     </header>
 
-    <div id="Experience" class="section">
-        <h1>Math Should be fun for everyone. My goal is to facilitate learning through effective tutoring.</h1>
-        <h2>Work Experience:</h2>
-        <p>Teacher's Assistant for Calculus III @ University of San Diego</p>
-        <p>Mathematics Grader @ University of San Diego</p>
-        <p>Mathematics and Chemistry Tutor @ Marithmetic</p>
-    </div>
-    
-    <div id="About" class="section">
-        <h2>About Me</h2>
-        <div class="text-with-image">
-            <img src="tutoring_surf.jpg" alt="Tutoring Surf">
-            <p>I grew up in the South Bay of Los Angeles and graduated from South High School in 2020. Given that I tutor 
-                math, you may think that I was always good at math. The reality is the opposite - I struggled at math in
-                middle school, especially Algebra 1, barely passing my classes. I know what it is like to feel lost and 
-                confused in math. In high school, with the help of tutors and online resources, I started to excel in 
-                math. I ultimately took AP Calculus BC my junior year and scored a 5 on the test! I also received a
-                Spartan Laurel award for my achievement in Mathematics. That summer, I began working at a local tutoring center,
-                with the hopes of helping others. Since then, I have begun tutoring independently. I tutored through the 
-                pandemic, so I was able to master teaching learning on an online setting. I recently graduated Summa Cum Laude 
-                from the University of San Diego with a degree in Mathematics! Outside of school, I love to surf, sail, and play guitar!
-            </p>
+    <main id="home">
+        <div id="main-quote_picture">
+            <h1 id="main-quote">Math should be fun for everyone. My goal is to facilitate
+                learning through effective tutoring.</h1>
+            <img src="website_image.jpg">
         </div>
-    </div>
+
+        <div id="Experiences">
+            <h1 id="experience_title">6+ Years of Experience</h1>
+            <ul id="list_experiences">
+                <li><p>Teacher's Assistant Calculus III</p><img src="usd_logo.png" class="work_logo"></li>
+                <li><p></p>Applied Mathematics Grader</p><img src="usd_logo.png" class="work_logo"></li></li>
+                <li><p></p>Math and Chemistry Tutor</p><img src="mathnasium_logo.png" class="work_logo"></li>
+            </ul>
     
-    <div id="Booking" class="section">
-        <h2><a href="https://calendly.com/nolan-tutoring" target="_blank">Book an Appointment</a></h2>
-        <p>By clicking the link, you can schedule a tutoring session. Tutoring takes place virtually. An email will be sent with a meeting link. The meeting is via Google Meet, 
-            so a Google account is necessary (it is free). You will be able to join the meeting at the time it is scheduled. 
-            I use a digital whiteboard that the students and I can write on, that way the lesson is more interactive. I recommend 
-            a Microsoft account to make whiteboard sharing easier. Please contact me if you are interested in in-person tutoring or have general questions!
-        </p>
-    </div>
+        </div>
+    </main>
 
-    <div id="Testimonials" class="section">
-        <h2>Testimonials</h2>
-        <p>"Nolan is a great tutor for calculus and really helps transform complex concepts into simpler ones. I highly recommend!"</p>
-        <p>- Ali Watson, Behavioral Neuroscience at University of San Diego</p>
-        <p>"I've been fortunate to have Nolan as my math tutor since high school. His guidance has been a game changer in helping me tackle complex concepts. 
-            His patience and encouragement has really boosted my confidence in class."</p>
-        <p>- Natalya Eastepp, Student at Texas Christian University</p>
-    </div>
 
-    <div id="Contact" class="section">
-        <h2>Contact Information</h2>
-        <p>Email: noln.anderson@gmail.com</p>
-        <p>Phone: (310) - 867 - 4182</p>
-    </div>
+
+
+    <script src="index.js"></script>
 </body>
 </html>
-
