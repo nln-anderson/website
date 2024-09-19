@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nolan's Math Tutoring</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+
+<body>
+
+    <header>
+        <h2 class="logo"><a href="./index">Nolan's Math Tutoring</a></h2>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="./about">About Me</a></li>
+                <li><a href="./services">Services</a></li>
+                <li><a href="./contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="book" href="https://calendly.com/nolan-tutoring" target="_blank"><button>Book Now</button></a>
+    </header>
+
+    <main id="home">
+        <div id="main-quote_picture">
+            <h1 id="main-quote">Math should be fun for everyone. My goal is to facilitate
+                learning through effective tutoring.</h1>
+            <img src="/static/website_image.jpg">
+        </div>
+
+        <div id="Experiences">
+            <h1 id="experience_title">6+ Years of Experience</h1>
+            <ul id="list_experiences">
+                <li><p>Teacher's Assistant Calculus III</p><img src="/static/usd_logo.png" class="work_logo"></li>
+                <li><p></p>Applied Mathematics Grader</p><img src="/static/usd_logo.png" class="work_logo"></li></li>
+                <li><p></p>Math and Chemistry Tutor</p><img src="/static/mathnasium_logo.png" class="work_logo"></li>
+            </ul>
+    
+        </div>
+        <body>
+            <h1>Approved Testimonials</h1>
+            <ul>
+                {% for testimonial in testimonials %}
+                    <li class="testimonial"><strong>{{ testimonial.name }}</strong> from {{ testimonial.school }}: "{{ testimonial.message }}"</li>
+                {% endfor %}
+            </ul>
+        
+            <h2>Submit a Testimonial</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="school">School:</label><br>
+                <input type="text" id="school" name="school" required><br><br>
+                
+                <label for="message">Testimonial:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </body>  
+    </main>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
