@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+
+/* animations and keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-from-right {
+    0% {
+        opacity: 0;
+        transform: translatex(30px) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+/*header*/
+
 * {
     margin: 0;
     padding: 0;
@@ -79,6 +104,14 @@ button:hover{
     align-items: center;
 }
 
+#main-quote_picture img {
+    animation: fade-from-right 1s;
+}
+
+#main-quote {
+    animation: fadeIn 2s;
+}
+
 #home img{
     height: 50%;
     width: 50%;
@@ -111,6 +144,10 @@ button:hover{
     overflow: hidden;
     font-size: calc(5px + 1vw);
     background-color: white;
+}
+
+#list_experiences{
+    animation: fadeIn 2s;
 }
 
 #Experiences ul{
